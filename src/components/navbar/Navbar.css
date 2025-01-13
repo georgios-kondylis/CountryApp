@@ -1,0 +1,7 @@
+#light-container {
+  transition: all ease 0.3s;
+}
+#light-container:hover {
+  background-color: #97979730;
+}
+

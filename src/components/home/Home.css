@@ -1,0 +1,70 @@
+select {
+  -webkit-appearance: none; /* Hides the default arrow in Chrome, Safari, and Edge */
+  -moz-appearance: none; /* Hides the default arrow in Firefox */
+  appearance: none; /* Standard way to hide the arrow */
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+ /* p{
+  background: #495564;
+} */
+
+.loading_anim {
+  animation: fade_in_out 3s infinite;
+}
+.loading_anim2 {
+  animation: fade_in_out2 3s infinite;
+}
+
+@keyframes fade_in_out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade_in_out2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.441);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none; /* Prevents interaction with the pseudo-element */
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.RIPPLE_EFFECT {
+  position: relative;
+  overflow: hidden; 
+}  
+/*Ensures the ripple doesn't overflow */
