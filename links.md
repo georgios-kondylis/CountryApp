@@ -1,4 +1,5 @@
 # Länkar
 
-- GitHub Repository: [Din GitHub-länk här]
-- Deployad App: [Länk till din deployade app här]
+- GitHub Repository: https://github.com/georgios-kondylis/CountryApp
+
+- Deployad App: https://georgios-the-flagapp-techover.netlify.app/
