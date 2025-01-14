@@ -41,11 +41,11 @@ const CountryDetails = ({ darkMode, color, setSearchQuery, rippleEffect }) => {
 
   return (
     <div
-      className={`flex flex-col w-full xl:w-[90%] transform ease-in-out duration-500 mx-auto items-center text-${color} mx-auto`}
+      className={`flex h-[100vh] flex-col w-full xl:w-[90%] transform ease-in-out duration-500 mx-auto items-center text-${color} mx-auto`}
     >
       <div
         id="back-btn"
-        className={`flex RIPPLE_EFFECT w-full items-center mt-[30px]`}
+        className={`flex w-full max-md:ml-[25px] items-center mt-[30px]`}
         onClick={(e) => {
           navigate(`/`);
           setSearchQuery("");
@@ -221,8 +221,8 @@ const CountryDetails = ({ darkMode, color, setSearchQuery, rippleEffect }) => {
             </div>
 
             {/*                                    BORDER COUNTRiES                       */}
-            <div className="max-md:flex-wrap mt-[70px] mb-[20px] flex items-center justify-start flex-wrap gap-[10px]">
-              <h1 className="font-[600]">Border countries:</h1>
+            <div className="max-md:flex-wrap mt-[70px] max-sm:pb-[70px] mb-[20px] flex items-center justify-start flex-wrap gap-[10px]">
+              <h1 className="font-[600] ">Border countries:</h1>
               {borderCountries.length > 0 ? (
                 borderCountries
                   .sort((a, b) => a.cca3.localeCompare(b.cca3))
@@ -230,7 +230,7 @@ const CountryDetails = ({ darkMode, color, setSearchQuery, rippleEffect }) => {
                     country.cca3 ? (
                       <p
                         key={country.cca3}
-                        className={`rounded-2xl px-[9px] py-[2px] ${
+                        className={` rounded-2xl px-[9px] py-[2px] ${
                           darkMode ? "bg-gray-600" : "bg-gray-200"
                         } cursor-pointer max-w-[150px]`}
                         onClick={() => {
